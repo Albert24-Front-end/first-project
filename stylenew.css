@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 2px solid red;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Manrope";
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.landing1 {
+    background-image: url("./Untitled.png");
+    background-position: right -111px top 0;
+    background-repeat: no-repeat;  
+}
+#menu_1 {
+    margin: calc(2vw + 1.99rem) calc(60.3vw - 9.915rem) calc(7vw + 5.888rem) calc(-6.5vw + 10.798rem);
+    width: calc(5.2vw + 6.224rem);
+    height: calc(1.2vw + 1.491rem);
+}
+#phone {
+    display: none;
+}
+.bar_menu {
+    display: none;
+}
+#green_circle {display: none;}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4.1875rem;
+    margin-top: 4rem;
+    margin-right: 4rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 137%;
+    text-align: left;
+    color: white;
+}
+.main_text_block1 {
+    margin-left: calc(6.8vw + 0.175rem);
+}
+.main_text_block1 h2 {
+    
+    font-size: calc(3vw + 1.348rem);
+    font-weight: 700;
+    line-height: 137%;
+    text-align: left;
+    color: rgba(38, 17, 99, 1);
+}
+.main_text_block1 p {
+    margin-top: calc(2.2vw + 1.182rem);  
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 137%;
+    text-align: left;
+    color: rgba(234, 54, 227, 1);
+}
+.main_text_block1 h4 {
+    margin-top: calc(1.2vw + 1.514rem);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 167%;
+    text-align: left;
+    color: rgba(167, 167, 167, 1);
+}
+.phone_text1 {
+    display: none;
+}
+.input_request {
+    margin: calc(-3vw + 8.027rem) calc(5vw - 0.535rem) calc(21.2vw + 0.9375rem);
+    padding: 2.375rem calc(0.8vw +1.353rem); 
+    gap: calc(0.2vw + 0.875rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 2.125rem;
+    box-shadow: 0px 17px 56px 0px rgba(110, 63, 244, 0.2);
+}
+.input_request button {
+    flex: 1;
+}
+.input_request select {
+    background: rgba(238, 238, 238, 1);
+    border: 1px solid rgba(210, 210, 210, 1);
+    color: rgba(167, 167, 167, 1);
+    height: calc(2.5vw + 3.718rem);
+    border-radius: 1.25rem;
+    padding: calc(1.4vw + 1.079rem) calc(0.8vw + 1.041rem);
+    font-size: calc(0.2vw + 0.9375rem);
+    font-weight: 500;
+    line-height: 137%;
+    text-align: left;
+}
+.input_request input {
+    width: auto;
+    height: calc(2.5vw + 3.718rem);
+    background: rgba(238, 238, 238, 1);
+    border: 1px solid rgba(210, 210, 210, 1);
+    color: rgba(167, 167, 167, 1);
+    border-radius: 1.25rem;
+    padding: calc(1.4vw + 1.079rem) calc(0.8vw + 1.041rem);
+    font-size: calc(0.2vw + 0.9375rem);
+    font-weight: 500;
+    line-height: 137%;
+    text-align: left;
+}
+.input_request button {
+    height: calc(2.5vw + 3.718rem);
+    background: rgba(234, 54, 227, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: calc(0.2vw + 0.9375rem);
+    font-weight: 700;
+    line-height: 137%;
+    border-radius: 1.25rem;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+.phone_btn1 {display: none;}
+.input_request select:last-child, .input_request input:last-child, .input_request button:last-child {
+    margin-right: 0;
+}
+#select1 {
+    flex: 2.2;
+}
+.input_request input {
+    flex: 1.3;
+}
+
+@media ((min-width: 375px) and (max-width: 1000px)) {
+    .bar_menu {
+        margin-right: 2rem;
+        display: block;
+    }
+    .navigation {display: none;}
+    #phone {
+        display: block;
+        margin-top: 3.375rem;
+        margin-left: 3.125rem;
+        height: 0.625rem;
+    }
+    .landing1 {
+        background-image: url("./Rectangle\ 2.png");
+        background-position: left -5.8125rem top 36rem;
+        background-repeat: no-repeat;
+    }  
+    .desktop_text1 {
+        display: none;
+    }
+    .phone_text1 {
+        display: block;
+    }
+    #green_circle {
+        display: block;
+        margin: 1.9375rem 0 1.9375rem 23.875rem;
+    }
+    .input_request {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .input_request select, .input_request input, .input_request button {
+        flex: 1;
+    }
+   
+    .input_request select, .input_request input, .input_request button {
+        flex: none;
+        width: 100%;
+    }
+    .desktop_btn1 {display: none;}
+    .phone_btn1 {display: block;}
+}
